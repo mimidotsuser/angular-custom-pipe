@@ -1,0 +1,32 @@
+<table>
+	<thead>
+		<th>SN</th>
+		<th>Region</th>
+		<th>Status</th>
+		<th>Dyanmic data column</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>USA,Ohio</td>
+			<td>active</td>
+			<td>
+				<ng-container *ngFor="let item of data">
+					{{x(item)}}
+				</ng-container>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>USA,Texas</td>
+			<td>inactive</td>
+			<td>
+				<ng-container *ngFor="let item of data">
+					{{x(item)}}
+				</ng-container>
+			</td>
+		</tr>
+
+	</tbody>
+
+</table>
